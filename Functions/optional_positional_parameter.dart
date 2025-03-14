@@ -1,7 +1,7 @@
 // 1. Required Parameter
 // 2. Optional Positional Parameters
 
-void main(List<String> args) {
+void main() {
   printCities("Delhi", "New York", "Sydney");
   print("");
   printCountry("USA");
