@@ -1,5 +1,5 @@
 void main() {
-  var student1 = Student();
+  var student1 = Student(); // One Object, student1 is reference variable
   student1.id = 101010;
   student1.name = "Kasim Khan";
   print(
@@ -8,7 +8,7 @@ void main() {
   student1.sleep();
   print("");
 
-  var student2 = Student();
+  var student2 = Student(); // One Object, student1 is reference variable
   student2.id = 202020;
   student2.name = "Samar Khan";
   print(
