@@ -46,4 +46,29 @@ void main() {
   } finally {
     print("This is FINALLY Clause and is always executed");
   }
+
+  print("");
+  print("Case 5");
+  // CASE 5: Custom Exception
+  try {
+    depositMoney(-300);
+  } catch (e) {
+    if (e is DepositException) {
+      print(e.errorMessage());
+    } else {
+      print("An error occurred $e");
+    }
+  }
+}
+
+class DepositException implements Exception {
+  String errorMessage() {
+    return "You cannont enter amount less than 0";
+  }
+}
+
+void depositMoney(int amount) {
+  if (amount < 0) {
+    throw new DepositException();
+  }
 }
