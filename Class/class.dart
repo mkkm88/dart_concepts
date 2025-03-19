@@ -1,3 +1,4 @@
+// A Class is a blueprint to create Objects
 void main() {
   var student1 = Student(); // One Object, student1 is reference variable
   student1.id = 101010;
